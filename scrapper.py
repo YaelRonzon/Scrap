@@ -7,20 +7,13 @@ from functools import wraps
 
 
 
-# def speed_test(fn):
-#     def wrapper(*args, **kwargs):
-#         t1 = time()
-#         result = fn(*args, **kwargs)
-#         end_time = time()
-#         print(f"Times elapsed: {end_time-t1}")
-#         return result
-#     return wrapper
+
 
 def scrap():
     response = requests.get("https://en.wikipedia.org/wiki/Mathematics")
     return response.text
 
-# @speed_test
+
 def html_formating(word_c, data):
     html = bs4.BeautifulSoup(data, 'html.parser')
     paragraphs = html.select("p")

@@ -28,13 +28,6 @@ def test_clean_text_sucess():
     assert expected == result
 
 
-# def clean_text(s_text):
-#     s_text = s_text.lower()
-#     s_text = s_text.replace(".", "").replace("," , "").replace("\n", "")
-#     return s_text.split(" ")
 
-# def remove_stopwords(s_text):
-#     s=set(stopwords.words('english'))
-#     return filter(lambda w: not w in s, s_text)
 
     
